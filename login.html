@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="./assets/style/index.css">
     <title>Pulse | Login</title>
 </head>
-<body>
+<body class="body-login">
     <main class="login">
         <section>
             <div class="left-login">
+                <div class="left-img"><img src="./assets/img/girlthree.png" alt="computer"></div>
                 <div class="main-logo"><img src="" alt=""></div>
             </div>
         </section>
@@ -35,17 +36,29 @@
                 </div>
                 <div class="login-form">
                     <form action="" method="get">
-                        <label for="email">Email : </label>   
-                        <input type="email" placeholder="Enter Email" name="username" id="email" required>  
-                        <label for="password">Password : </label>   
-                        <input type="password" placeholder="Enter Password" name="password" id="password" required>  
-                        <label for="remember">Remember me</label>
-                        <input type="checkbox" name="remember" id="remember">
-                        <a href="#">Forgot password?</a>
+                        <div class="input-wrapper">
+                            <label for="email">Email : </label>   
+                            <input type="email" placeholder="Enter Email" name="username" id="email" required>  
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="password">Password : </label>   
+                            <input type="password" placeholder="Enter Password" name="password" id="password" required>  
+                        </div>
+                        <div class="login-options">
+                            <span>
+                                <input type="checkbox" name="remember" id="remember">
+                                <label class="remember-me" for="remember">Remember me</label> 
+                            </span>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="form-buttons">
+                            <input type="button" value="Login" class="primary-button" id="login">
+                            <input type="button" value="Create Profile" class="secondary-button">
+                        </div>
                     </form>
                 </div>
                 <div class="social-links">
-                    <p>Or login with <span>Facebook</span><span>LinkedIn</span><span>Google</span></p>
+                    <p>Or login with <a href="#"> Facebook </a><a href="#"> LinkedIn </a><a href="#"> Google</a></p>
                 </div>
             </div>
         </section>
