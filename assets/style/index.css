@@ -37,7 +37,7 @@ section {
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 6.2rem;
     background: linear-gradient(90deg, #FC37D0 20%, #9458FF 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -105,6 +105,27 @@ input[type=button] {
 
 /* Login */
 
+.left-login {
+    position: relative;
+}
+
+.main-logo {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.main-logo img {
+    width: 200px;
+}
+
+.login-title img {
+    width: 250px;
+    display: inline;
+    vertical-align: middle;
+    margin-left: -10px;
+}
+
 .body-login {
     overflow: hidden;
 }
@@ -125,8 +146,12 @@ main.login {
     backdrop-filter: blur(10px);
     background: rgba(253, 253, 253, 0.616);
     backdrop-filter: saturate(180%) blur(20px);
-    padding: 100px;
+    padding: 50px 80px;
     width: 100%;
+}
+
+.login-title h3 {
+    margin-top: -25px;
 }
 
 form {
@@ -158,6 +183,13 @@ input#remember {
     width: 500px;
 }
 
+.form-buttons input[type=button] {
+    height: 60px;
+    /* padding: 10px 70px; */
+    border-radius: 10px;
+    width: 240px;
+}
+
 .social-links {
     display: flex;
     justify-content: space-between;
@@ -175,3 +207,9 @@ input#remember {
     color: var(--secondary-pink);
 }
 
+p#error-message {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #ff004e;
+    height: 5px;
+}
