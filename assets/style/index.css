@@ -10,12 +10,12 @@
     --primary-pink: #fc37d0;
     --secondary-pink: #c21e9e;
     --light-pink: #f4aad9;
-
 }
 
 body {
     min-height: 100%;
-    background: #fff url('../img/pink-blur-bg.jpg') center center / cover no-repeat fixed;
+    background: rgb(255,130,227);
+    background: radial-gradient(circle, rgba(255,130,227,1) 0%, rgba(245,238,244,1) 60%);
     color: var(--primary-dark);
     font-family: 'Poppins', sans-serif;
 }
