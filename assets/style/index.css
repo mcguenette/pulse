@@ -34,6 +34,7 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -135,11 +136,17 @@ input[type=button] {
 
 .left-login {
     position: relative;
+    background: #fff url(../img/girlthree.png) center center / cover no-repeat;
+    height: 100dvh;
+    width: 100%;
+}
+.left-img img {
+    height: 100dvh;
 }
 
 .main-logo {
     position: absolute;
-    top: 40px;
+    top: 5px;
     left: 10px;
 }
 
@@ -174,7 +181,7 @@ main.login {
     backdrop-filter: blur(10px);
     background: rgba(253, 253, 253, 0.616);
     backdrop-filter: saturate(180%) blur(20px);
-    padding: 50px 80px;
+    padding: 50px 80px 50px 100px;
     width: 100%;
 }
 
