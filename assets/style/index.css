@@ -294,7 +294,7 @@ section.profile, .post, section.new-users {
 
 .post-footer {
     padding-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--primary-grey);
     display: flex;
     justify-content: flex-start;
     gap: 20px;
@@ -307,6 +307,10 @@ section.profile, .post, section.new-users {
 
 .icon {
     margin-right: 5px;
+}
+
+.hashtags {
+    color: var(--primary-pink);
 }
 
 .like,
