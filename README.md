@@ -1,7 +1,6 @@
-# pulse
+# Pulse
 
-### Where Your Career Finds Its Rhythm
-Connect, Collaborate, and Thrive with Every Beat
+#### Where Your Career Finds Its Rhythm : Connect, Collaborate, and Thrive with Every Beat
 
 Want to see what we've created? Take a look [here](https://mcguenette.github.io/pulse/)
 
