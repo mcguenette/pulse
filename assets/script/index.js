@@ -66,7 +66,7 @@ function login() {
         clearErrorMessage();
         
         if (emailValue === loginEmail && passwordValue === loginPassword) {
-            window.location.href = '/index.html';
+            window.location.href = '/pulse/index.html';
         } else {
             errorOutput.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Wrong password. Try again or click Forgot password to reset it`;
         }
