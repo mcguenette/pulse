@@ -104,3 +104,9 @@ onEvent('click', loginButton, login);
 onEvent('input', inputEmail, clearErrorMessage);
 onEvent('input', inputPassword, clearErrorMessage);
 // Login (end)
+
+// copy date
+const date = new Date().getFullYear();
+const output = select('#date');
+
+output.textContent = date;
