@@ -10,21 +10,15 @@
     --primary-pink: #fc37d0;
     --secondary-pink: #c21e9e;
     --light-pink: #f4aad9;
+    --primary-purple: #9458FF;
 }
 
 body {
     min-height: 100dvh;
     background: rgb(255,130,227);
-    background: radial-gradient(circle, rgba(255,130,227,1) 0%, rgba(245,238,244,1) 60%);
+    background: radial-gradient(circle, rgba(255,130,227,1) 0%, rgba(255,187,240,1) 22%, rgba(227,227,255,1) 55%);
     color: var(--primary-dark);
     font-family: 'Poppins', sans-serif;
-}
-
-main.login {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100dvh;
 }
 
 .container {
@@ -39,10 +33,15 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 6.2rem;
+    background: linear-gradient(90deg, #FC37D0 20%, #9458FF 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header {
@@ -75,21 +74,102 @@ li:hover {
 }
 /* Inputs/Buttons */
 
-input {
-    height: 46px;
-    border-radius: 10px;
-    border: 2px solid var(--light-color);
-    background-color: var(--transparent-light);
-    padding: 7px 15px;
+input[type='text'], input[type='email'], input[type='password'] {
+    /* height: 46px; */
+    /* padding: 7px 15px; */
+    background: transparent;
 }
 
 input::placeholder	{
-    color: var(--primary-grey)
+    color: var(--primary-dark)
+}
+
+.input-wrapper {
+    border-radius: 10px;
+    border: 2px solid var(--light-color);
+    background-color: var(--transparent-light);
+    display: flex;
+    flex-direction: column;
+    padding: 7px 15px;
+    width: 500px;
+}
+
+.input-wrapper + .input-wrapper {
+    margin-top: 25px;
+}
+
+label, a {
+    font-size: 12px;
+    color: var(--primary-grey);
+    text-decoration: none;
+    transition: 0.35s ease-in-out;
+}
+
+input[type=button] {
+    height: 60px;
+    padding: 10px 70px;
+    border-radius: 10px;
+}
+
+.primary-button {
+    background-color: var(--primary-pink);
+    color: var(--light-color);
+    transition: 0.5s ease-in-out;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-purple);
+}
+
+.secondary-button {
+    background-color: var(--transparent-light);
+    color: var(--primary-pink);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 200ms;
+}
+
+.secondary-button:hover {
+    transform: translateY(-1px);
 }
 
 /* Login */
+
 .left-login {
-    background: #fff url('../img/electronics-sm.jpg') center center / cover no-repeat fixed;
+    position: relative;
+    background: #fff url(../img/girlthree.png) center center / cover no-repeat;
+    height: 100dvh;
+    width: 100%;
+}
+.left-img img {
+    height: 100dvh;
+}
+
+.main-logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.main-logo img {
+    width: 200px;
+}
+
+.login-title img {
+    width: 250px;
+    display: inline;
+    vertical-align: middle;
+    margin-left: -10px;
+}
+
+.body-login {
+    overflow: hidden;
+}
+
+main.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
 }
 
 .right-login {
@@ -97,11 +177,12 @@ input::placeholder	{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-evenly;
+    justify-content: space-between;
     backdrop-filter: blur(10px);
     background: rgba(253, 253, 253, 0.616);
     backdrop-filter: saturate(180%) blur(20px);
-    padding: 60px;
+    padding: 50px 80px 50px 100px;
+    width: 100%;
 }
 
 /* Columns */
@@ -237,3 +318,67 @@ input::placeholder	{
     border-radius: 50%;
     margin-right: 10px;
   }
+
+.login-title h3 {
+    margin-top: -25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-options {
+    padding: 7px 0px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.login-options a:hover {
+    color: var(--primary-pink);
+}
+
+input#remember {
+    vertical-align: middle;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.form-buttons input[type=button] {
+    height: 60px;
+    /* padding: 10px 70px; */
+    border-radius: 10px;
+    width: 240px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+}
+
+.social-links a {
+    color: var(--primary-pink);
+    font-size: inherit;
+    margin-inline: 20px;
+}
+
+.social-links a:hover {
+    color: var(--secondary-pink);
+}
+
+p#error-message {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #ff004e;
+    height: 5px;
+}
