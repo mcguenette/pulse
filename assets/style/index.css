@@ -278,18 +278,18 @@ textarea {
     padding: 13px 5px;
 }
 
-.submit-post {
+.new-post {
     width: 100%;
 }
 
-.submit-post .input-wrapper {
+.new-post .input-wrapper {
     width: 100%;
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     border: none;
 }
 
-.submit-post span {
+.new-post span {
     display: flex;
     justify-content: flex-end;
     align-items: center;
