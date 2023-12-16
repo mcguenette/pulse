@@ -6,7 +6,7 @@
     --secondary-dark: #313455;
     --primary-grey: #969bb7;
     --light-color: #fff;
-    --transparent-light: #ffffff9c;
+    --transparent-light: #ffffff85;
     --primary-pink: #fc37d0;
     --secondary-pink: #c21e9e;
     --light-pink: #f4aad9;
@@ -16,7 +16,7 @@
 body {
     min-height: 100dvh;
     background: rgb(255, 130, 227);
-    background: radial-gradient(circle, rgba(255, 130, 227, 1) 0%, rgba(255, 187, 240, 1) 22%, rgba(227, 227, 255, 1) 55%);
+    background: radial-gradient(circle, rgba(255, 130, 227, 1) 0%, rgba(255, 187, 240, 1) 25%, rgba(227, 227, 255, 1) 75%);
     color: var(--primary-dark);
     font-family: 'Poppins', sans-serif;
 }
@@ -390,7 +390,6 @@ form {
 }
 
 .login-options {
-    padding: 7px 0px;
     margin-top: 3px;
     display: flex;
     align-items: center;
@@ -439,7 +438,6 @@ input#remember {
 
 p#error-message {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
     color: #ff004e;
-    height: 5px;
 }
