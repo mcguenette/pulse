@@ -91,9 +91,9 @@ li:hover {
 }
 
 .account img, .connection-pic, .post-header img {
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
-    height: 60px;
+    height: 50px;
     display: inline;
 }
 
