@@ -20,8 +20,95 @@
     <title>Pulse | Home</title>
 </head>
 <body>
+    <header>
+        <div class="home"></div>
+        <ul>
+            <li>Groups</li>
+            <li>Posts</li>
+            <li>Friends</li>
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Connections</li>
+        </ul>
+    </header>
     <main>
-        <div class="container">
+        <div class="container columns">
+            <section class="profile">
+                <div class="title"><h2>Profile</h2></div>
+                <div class="bio">
+                    <div class="profile-header">
+                        <img src="./assets/img/2.jpg" alt="Profile Picture" class="profile-pic" id="bio-pic">
+                        <div class="user-name">John Doe</div>
+                        <div class="headline">Software Developer</div>
+                      </div>
+                      <div class="profile-content">
+                        <p>This is some fake content for the profile section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                      <div class="connection-info">
+                        <div class="connections">500+ connections</div>
+                        <div class="connection-count">3 mutual connections</div>
+                      </div>
+                      <div class="views-info">
+                        <div class="views">1800 views</div>
+                      </div>
+                </div>
+            </section>
+            <section class="feed">
+                <div class="post">
+                    <div class="post-header">
+                      <img src="./assets/img/74.jpg" alt="Profile Picture" class="profile-pic">
+                      <span class="user-name">John Doe</span>
+                      <span class="post-time">2 hours ago</span>
+                    </div>
+                    <div class="post-content">
+                      <p>This is some fake content for the post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <img src="./assets/img/neom-g_suks3yx-U-unsplash.jpg">
+                    </div>
+                    <div class="post-footer">
+                      <div class="like-comment-share">
+                        <span class="icon">&#128077;</span>
+                        <span class="like">Like</span>
+                      </div>
+                      <div class="like-comment-share">
+                        <span class="icon">&#128172;</span>
+                        <span class="comment">Comment</span>
+                      </div>
+                      <div class="like-comment-share">
+                        <span class="icon">&#128206;</span>
+                        <span class="share">Share</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="post-header">
+                      <img src="./assets/img/89.jpg" alt="Profile Picture" class="profile-pic">
+                      <span class="user-name">John Doe</span>
+                      <span class="post-time">2 hours ago</span>
+                    </div>
+                    <div class="post-content">
+                      <p>This is some fake content for the post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <img src="./assets/img/marek-piwnicki-diaEN-IdFto-unsplash.jpg">
+                    </div>
+                    <div class="post-footer">
+                      <div class="like-comment-share">
+                        <span class="icon">&#128077;</span>
+                        <span class="like">Like</span>
+                      </div>
+                      <div class="like-comment-share">
+                        <span class="icon">&#128172;</span>
+                        <span class="comment">Comment</span>
+                      </div>
+                      <div class="like-comment-share">
+                        <span class="icon">&#128206;</span>
+                        <span class="share">Share</span>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section class="new-users">
+                <div class="title"><h2>People you may know</h2></div>
+                <div class="insert-users"></div>
+            </section>
         </div>
     </main>
 </body>
