@@ -18,7 +18,7 @@ fetch('https://randomuser.me/api/?nat=CA&results=10')
     connectionPic.alt = 'Connection Profile Picture';
 
     const connectionInfo = document.createElement('div');
-    connectionInfo.innerHTML = `<strong>${user.name.first} ${user.name.last}</strong><br>${user.location.city}`;
+    connectionInfo.innerHTML = `<h3>${user.name.first} ${user.name.last}</h3><p>${user.location.city}</p>`;
 
     connectionItem.appendChild(connectionPic);
     connectionItem.appendChild(connectionInfo);
