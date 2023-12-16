@@ -13,7 +13,7 @@
 }
 
 body {
-    min-height: 100%;
+    min-height: 100dvh;
     background: rgb(255,130,227);
     background: radial-gradient(circle, rgba(255,130,227,1) 0%, rgba(245,238,244,1) 60%);
     color: var(--primary-dark);
@@ -45,6 +45,34 @@ h1 {
     font-size: 46px;
 }
 
+header {
+    height: 60px;
+    background-color: var(--transparent-light);
+    display: flex;
+    color: var(--primary-pink);
+    margin-bottom: 30px;
+    padding: 0 60px;
+}
+
+.home {
+    width: 30%
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 70%;
+}
+
+li + li {
+    margin-left: 20px;
+}
+
+li:hover {
+    color: var(--secondary-pink);
+    cursor: pointer;
+}
 /* Inputs/Buttons */
 
 input {
@@ -74,4 +102,110 @@ input::placeholder	{
     background: rgba(253, 253, 253, 0.616);
     backdrop-filter: saturate(180%) blur(20px);
     padding: 60px;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+    align-content: space-between;
+    gap: 10px;
+}
+
+.title {
+    background-color: var(--transparent-light);
+    font-weight: 400;
+    width: 100%;
+}
+
+.profile {
+    width: 30%;
+}
+
+.feed {
+    width: 40%;
+}
+
+.new-users {
+    width: 30%;
+}
+
+/* post sections */
+.post {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--transparent-light);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .post-content {
+    padding: 10px;
+  }
+
+  .post-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .like-comment-share {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+
+  .like, .comment, .share {
+    cursor: pointer;
+    color: #333;
+  }
+
+
+/* profile section */
+.bio {
+    background-color: var(--transparent-light);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.views-info {
+    margin-top: 20px;
+}
+
+.connection-info {
+    margin-top: 20px;
+}
+
+.profile-content {
+    margin-top: 20px;
+}
+
+.profile-header img {
+    margin-bottom: 20px;
+}
+
+#bio-pic {
+    width: 60px;
+    height: 60px;
+}
+/* Recommended section */
+
+.user-div {
+    background-color: var(--transparent-light);
 }
