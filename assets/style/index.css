@@ -6,7 +6,8 @@
     --secondary-dark: #313455;
     --primary-grey: #969bb7;
     --light-color: #fff;
-    --transparent-light: #ffffff85;
+    --transparent-input: #ffffff85;
+    --transparent-bg: rgba(253, 253, 253, 0.616);
     --primary-pink: #fc37d0;
     --secondary-pink: #c21e9e;
     --light-pink: #f4aad9;
@@ -50,7 +51,7 @@ h3 {
 
 header {
     height: 80px;
-    background-color: var(--transparent-light);
+    background-color: var(--transparent-bg);
     display: flex;
     color: var(--primary-dark);
     margin-bottom: 30px;
@@ -81,7 +82,7 @@ li {
 }
 
 li:hover {
-    color: var(--secondary-pink);
+    color: var(--primary-pink);
     cursor: pointer;
 }
 
@@ -97,9 +98,12 @@ li:hover {
     display: inline;
 }
 
-i.fa-solid.fa-gear,
-i.fa-solid.fa-message {
+.fa-gear,
+.fa-message, 
+.fa-arrow-up-from-bracket, 
+.fa-paper-plane {
     font-size: 24px;
+    color: var(--primary-pink);
 }
 
 /* Inputs/Buttons */
@@ -112,14 +116,19 @@ input[type='password'] {
     background: transparent;
 }
 
-input::placeholder {
+/* because label is in input- dark placeholder, but text area has no label */
+input::placeholder { 
     color: var(--primary-dark)
+}
+
+textarea::placeholder {
+    color: var(--primary-grey);
 }
 
 .input-wrapper {
     border-radius: 10px;
     border: 2px solid var(--light-color);
-    background-color: var(--transparent-light);
+    background-color: var(--transparent-input);
     display: flex;
     flex-direction: column;
     padding: 7px 15px;
@@ -155,7 +164,7 @@ input[type=button] {
 }
 
 .secondary-button {
-    background-color: var(--transparent-light);
+    background-color: var(--transparent-input);
     color: var(--primary-pink);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     transition: all 200ms;
@@ -245,7 +254,7 @@ section.feed {
 }
 
 section.profile, .post, section.new-users {
-    background-color: var(--transparent-light);
+    background-color: var(--transparent-bg);
     padding: 20px;
     border-radius: 10px;
 }
@@ -254,7 +263,40 @@ section.profile, .post, section.new-users {
     width: 30%;
 }
 
-/* post sections */
+/* post/feed section */
+
+textarea {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-inline: auto;
+    resize: none;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 13px 5px;
+}
+
+.submit-post {
+    width: 100%;
+}
+
+.submit-post .input-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border: none;
+}
+
+.submit-post span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 5px;
+}
+
 .post {
     border-radius: 10px;
     padding: 20px;
@@ -286,6 +328,10 @@ section.profile, .post, section.new-users {
 
 .post-content p {
     padding-bottom: 20px;
+}
+
+.post-content span {
+    color: var(--primary-purple);
 }
 
 .post-content img {
