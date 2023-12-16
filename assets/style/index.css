@@ -87,6 +87,10 @@ li:hover {
     cursor: pointer;
 }
 
+li i:hover {
+    color: var(--secondary-pink);
+}
+
 .account {
     justify-content: flex-end;
     color: var(--primary-pink);
