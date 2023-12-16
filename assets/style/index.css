@@ -75,6 +75,7 @@ header {
 li {
     display: inline;
     vertical-align: middle;
+    transition: 0.35s ease-in-out;
 }
 
 .nav li + li, .account li + li {
@@ -91,6 +92,10 @@ li:hover {
     color: var(--primary-pink);
 }
 
+.account i:hover{
+    color: var(--secondary-pink);
+}
+
 .account img, .connection-pic, .post-header img {
     width: 50px;
     border-radius: 50%;
@@ -104,6 +109,7 @@ li:hover {
 .fa-paper-plane {
     font-size: 24px;
     color: var(--primary-pink);
+    transition: 0.35s ease-in-out;
 }
 
 /* Inputs/Buttons */
@@ -297,6 +303,15 @@ textarea {
     padding: 10px 5px;
 }
 
+.new-post i {
+    transition: 0.35s ease-in-out;
+}
+
+.new-post i:hover {
+    cursor: pointer;
+    color: var(--secondary-pink);
+}
+
 .post {
     border-radius: 10px;
     padding: 20px;
@@ -379,6 +394,10 @@ textarea {
 
 .connection-info {
     margin-top: 20px;
+}
+
+.connection-item h3 {
+    margin: 0;
 }
 
 .profile-content {
