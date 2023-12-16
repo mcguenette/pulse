@@ -372,6 +372,11 @@ textarea {
 
 .hashtags {
     color: var(--primary-pink);
+    transition: 3.5s ease-in-out;
+}
+
+.hashtags:hover {
+    cursor: pointer;
 }
 
 .like,
@@ -444,6 +449,17 @@ section.new-users {
     border-bottom: 1px solid var(--primary-grey);
     width: 100%;
 }
+
+ul#connections-list li:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.connections, .connection-count, .views-info {
+    color: var(--primary-grey);
+}
+
 
 img.connection-pic {
     margin-right: 10px;
