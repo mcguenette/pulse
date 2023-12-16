@@ -2,9 +2,7 @@
 
 import { onEvent, select, selectAll } from './utils.js';
 
-
-
-// Fetch data from the Random User API
+// Fetch data from the Random User API (start)
 fetch('https://randomuser.me/api/?nat=CA&results=10')
 .then(response => response.json())
 .then(data => {
@@ -29,7 +27,8 @@ fetch('https://randomuser.me/api/?nat=CA&results=10')
   });
 })
 .catch(error => console.error('Error fetching data:', error));
-  
+// (end)
+
 // Login (start)
 const testEmail = 'mc-robyn@pulse.ca'; 
 const testPassword = 'thisisasafepassword';
