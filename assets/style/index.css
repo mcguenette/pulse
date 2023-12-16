@@ -197,12 +197,6 @@ input[type=button] {
     height: 100dvh;
 }
 
-.main-logo {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-}
-
 .main-logo img {
     width: 200px;
 }
