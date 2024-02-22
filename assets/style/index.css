@@ -413,7 +413,7 @@ span.likes {
 
 .profile-header img {
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 100%;
 }
 
 .headline p, .post-time p {
